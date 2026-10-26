@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123524">
+<title>Minha Cozinha Artesanal</title>
+<style>
+:root{--green:#123524;--green2:#1e5138;--gold:#eab308;--cream:#fdfbf7;--brown:#7c5c4b;--line:#e8e2d5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--cream);color:#202820}
+header{background:var(--green);color:var(--cream);padding:18px 20px;position:sticky;top:0;z-index:5;border-bottom:3px solid var(--gold)}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:900;font-size:1.15rem;letter-spacing:.2px}.brand span{color:var(--gold)}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--cream);text-decoration:none;font-size:.9rem;font-weight:700}
+.hero{background:linear-gradient(120deg,#123524,#1e5138);color:white;padding:58px 20px}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.kicker{color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;margin:12px 0}h1 span{color:var(--gold)}
+.hero p{max-width:560px;line-height:1.7;color:#fdfbf7}
+.hero-art{min-height:250px;border-radius:26px;background:linear-gradient(135deg,#eab308,#f7d98b);display:grid;place-items:center;color:var(--green);font-size:6rem;box-shadow:0 18px 45px #0003}
+.btn{display:inline-block;border-radius:999px;background:var(--gold);color:var(--green);padding:13px 20px;font-weight:900;text-decoration:none;margin-top:10px}
+.notice{background:var(--gold);color:var(--green);padding:16px 20px;text-align:center;font-weight:800}
+section.menu{max-width:1100px;margin:0 auto;padding:44px 20px}
+.section-head{text-align:center;margin-bottom:24px}.section-head h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--green);margin:0 0 8px}.section-head p{color:var(--brown);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 18px #1235240b;display:flex;flex-direction:column}
+.photo{height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#e8dfc9,#f8f2e4);font-size:4.2rem}
+.photo.green{background:linear-gradient(135deg,#d7ead8,#edf5e9)}.photo.orange{background:linear-gradient(135deg,#f7d4a6,#fff0d6)}.photo.pink{background:linear-gradient(135deg,#f5d6d1,#fff0e7)}
+.content{padding:18px;display:flex;flex-direction:column;flex:1}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.top h3{margin:0;color:var(--green);font-size:1.12rem}.price{white-space:nowrap;background:#fef3c7;color:#92400e;padding:6px 9px;border-radius:999px;font-weight:900}
+.content p{color:var(--brown);font-size:.93rem;line-height:1.55}.benefit{font-size:.8rem;font-weight:900;color:var(--green2);margin-top:8px}
+.order{margin-top:auto;display:block;text-align:center;padding:11px 14px;background:var(--green);color:white;text-decoration:none;border-radius:12px;font-weight:800}
+footer{background:var(--green);color:#fdfbf7;text-align:center;padding:30px 20px;line-height:1.7}footer strong{color:var(--gold)}
+@media(max-width:760px){.hero-inner{grid-template-columns:1fr}.hero-art{min-height:170px;font-size:4.5rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}nav{gap:10px}}
+@media(max-width:500px){.grid{grid-template-columns:1fr}.photo{height:200px}.hero{padding:42px 18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Minha <span>Cozinha</span> Artesanal</div><nav><a href="#bolos">Bolos</a><a href="#sucos">Sucos</a><a href="#mousse">Mousse</a></nav></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div><div class="kicker">Feito com amor e carinho</div><h1>Sabor artesanal, <span>feito para você.</span></h1><p>Bolos salgados no pote, sucos naturais e mousse preparados sob encomenda, com cuidado e ingredientes frescos.</p><a class="btn" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20uma%20encomenda.%20Poderia%20me%20informar%20as%20datas%20dispon%C3%ADveis%3F">Encomendar pelo WhatsApp</a></div><div class="hero-art" aria-label="Comida artesanal">🍽️</div></div></section>
+<div class="notice">🥡 Tudo preparado sob encomenda! Faça seu pedido com antecedência e consulte a disponibilidade para receber no dia seguinte.</div>
+<section class="menu" id="bolos"><div class="section-head"><h2>Bolos salgados no pote</h2><p>Uma opção prática, cremosa e cheia de sabor.</p></div><div class="grid">
+<article class="card"><div class="photo orange">🥪</div><div class="content"><div class="top"><h3>Bolo Salgado — Simples</h3><span class="price">R$ 10,00</span></div><p>Frango desfiado cremoso com maionese, cenoura, milho, ervilha e batata palha.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Bolo%20Salgado%20Simples%20por%20R%24%2010%2C00.">Reservar pelo WhatsApp</a></div></article>
+<article class="card"><div class="photo">🍗</div><div class="content"><div class="top"><h3>Bolo Salgado — Especial</h3><span class="price">R$ 14,00</span></div><p>Frango desfiado, purê de batata, requeijão, cenoura, milho, ervilha e batata palha.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Bolo%20Salgado%20Especial%20por%20R%24%2014%2C00.">Reservar pelo WhatsApp</a></div></article>
+</div></section>
+<section class="menu" id="sucos"><div class="section-head"><h2>Sucos naturais — 300 ml</h2><p>Preparados com água, frutas, verduras e limão.</p></div><div class="grid">
+<article class="card"><div class="photo green">🥬🍏</div><div class="content"><div class="top"><h3>Suco Verde</h3><span class="price">R$ 8,00</span></div><div class="benefit">Frescor e nutrientes para o dia a dia</div><p>Couve, gengibre, limão, maçã e hortelã.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Suco%20Verde%20de%20300%20ml%20por%20R%24%208%2C00.">Reservar pelo WhatsApp</a></div></article>
+<article class="card"><div class="photo orange">🥕</div><div class="content"><div class="top"><h3>Suco de Cenoura</h3><span class="price">R$ 8,00</span></div><div class="benefit">Com nutrientes importantes para visão e pele</div><p>Cenoura, couve, limão, hortelã e gengibre.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Suco%20de%20Cenoura%20de%20300%20ml%20por%20R%24%208%2C00.">Reservar pelo WhatsApp</a></div></article>
+<article class="card"><div class="photo pink">❤️</div><div class="content"><div class="top"><h3>Suco de Beterraba</h3><span class="price">R$ 8,00</span></div><div class="benefit">Uma opção refrescante para acompanhar sua rotina</div><p>Beterraba, couve, limão, hortelã e gengibre.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Suco%20de%20Beterraba%20de%20300%20ml%20por%20R%24%208%2C00.">Reservar pelo WhatsApp</a></div></article>
+<article class="card"><div class="photo orange">🍍</div><div class="content"><div class="top"><h3>Suco de Abacaxi</h3><span class="price">R$ 8,00</span></div><div class="benefit">Sabor tropical e refrescante</div><p>Abacaxi, couve, limão, hortelã e gengibre.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20o%20Suco%20de%20Abacaxi%20de%20300%20ml%20por%20R%24%208%2C00.">Reservar pelo WhatsApp</a></div></article>
+</div></section>
+<section class="menu" id="mousse"><div class="section-head"><h2>Mousse no pote</h2><p>Uma sobremesa cremosa para adoçar o seu dia.</p></div><div class="grid">
+<article class="card"><div class="photo pink">🍋</div><div class="content"><div class="top"><h3>Mousse de Limão</h3><span class="price">R$ 12,00</span></div><p>Mousse de limão com ganache e Oreo.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20a%20Mousse%20de%20Lim%C3%A3o%20com%20ganache%20e%20Oreo%20por%20R%24%2012%2C00.">Reservar pelo WhatsApp</a></div></article>
+<article class="card"><div class="photo orange">🥭</div><div class="content"><div class="top"><h3>Mousse de Maracujá</h3><span class="price">R$ 12,00</span></div><p>Mousse de maracujá com ganache e Oreo.</p><a class="order" href="https://wa.me/5511911143493?text=Ol%C3%A1%21%20Quero%20reservar%20a%20Mousse%20de%20Maracuj%C3%A1%20com%20ganache%20e%20Oreo%20por%20R%24%2012%2C00.">Reservar pelo WhatsApp</a></div></article>
+</div></section>
+</main>
+<footer><strong>Minha Cozinha Artesanal</strong><br>Pedidos com antecedência · Entrega no dia seguinte conforme disponibilidade<br>WhatsApp: (11) 91114-3493<br><small>Cardápio demonstrativo: substituir os ícones pelas artes aprovadas antes de divulgar.</small></footer>
+</body></html>
